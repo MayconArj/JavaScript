@@ -1,0 +1,11 @@
+Criada em 1995
+Linguagem de alto nível
+Originalmente chamada de LiveScript
+= JS = Vanilla JavaScript = ECMAScript
+Just-in-time compiled
+Orientada a objetos
+
+Interage com HTML e CSS (DOM)
+Calcula, manipula e valida dados
+Pode ser usada como linguagem server-side (Node.js)
+Linguagem base de grandes Frameworks (React, Angular, Vue)
