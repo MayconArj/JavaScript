@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Typeof exibe o tipo do dado
+        console.log(typeof 13);
+        console.log(2 + 2);
+        console.log(2 * 4 - 3);
+        console.log(5 + (2*4));
+
+        // Special Numbers (infinity e -infinity e NaN (Not A Number))
+        console.log(typeof Infinity);
+        console.log(typeof -Infinity);
+        console.log(typeof NaN);
+
+        // Strings
+        console.log(typeof 'isso é uma String');
+        console.log(typeof "Este texto aqui também");
+        console.log(typeof `E este também`);
+        
+        // detalhes mais técnicos
+        console.log("Essa é uma String \n de duas linhas");
+        console.log("este: '' é o uso de aspas dentro de uma string");
+        console.log('""este também');
+        console.log("salada" + " de " + "frutas");
+        console.log(`A multiplicação de 5 por 3 é ${5*3}`);
+
+        // Booleans
+        console.log(typeof(5>2));
+        console.log(typeof false);
+
+        // Booleans: Operadores lógicos
+        console.log(true && true);
+        console.log(true && false);
+        console.log(false && false);
+        console.log(true || false);
+        console.log(false || true);
+        console.log(false || !true);
+
+        // Booleans: operador ternário
+        console.log(true ? 1:2);
+        console.log(false ? 'falso':'verdadeiro');
+
+        // Empty Values (undefined e null)
+        console.log(null);
+        console.log(undefined);
+
+        // Conversão de tipo automática
+        console.log(5 * null); // 0
+        console.log("5" - 3); //2
+        console.log("5" + 1) //51
+        console.log("dois" * "três"); //NaN
+
+        console.log(typeof (5 * null)); // number
+        console.log(typeof("5" - 3)); // number
+        console.log(typeof("5" + 1)) // string
+        console.log(typeof("dois" * "três")); // number
+    </script>
+</body>
+</html>

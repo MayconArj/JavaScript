@@ -9,3 +9,137 @@ Interage com HTML e CSS (DOM)
 Calcula, manipula e valida dados
 Pode ser usada como linguagem server-side (Node.js)
 Linguagem base de grandes Frameworks (React, Angular, Vue)
+
+
+Tipos de dados
+- Number (Aritimético, Special Numbers)
+- String
+- Boolean (Comparações, operadores lógicos)
+- Empty Values (null, undefined)
+
+O que é um programa/software?
+- É um conjunto de declarações (statements)
+- Statements são conjuntos de expressões (expressions)
+- Expression é todo fragmento de código que produz um valor
+
+Statement: console.log(1 > 2);
+É um Statement porque existe uma expression dentro dele
+
+Expression: console.log('batata');
+É uma Expression porque tem um valor, mas nao uma expression.
+
+Variáveis
+let laranjas = 5;
+console.log(laranjas * laranjas);
+console.log(`Tem ${laranjas} na sexta.`);
+
+let quadrado = 4, triangulo = 3, retangulo = 4;
+
+O JS aceita ser usado também o var ou o const.
+Não é mais usado o var.
+O const é para constantes.
+
+Convenção no nome das Variáveis
+- Sem começar com número
+- Usar $ ou _ mas não utilizar outros caracteres especiais
+- Não pode ter pontuação
+- Pode ser iniciado com letra maiuscula
+- Pode ser usado o camelCase.
+
+Palavras reservadas
+break case catch class const continue debugger default delete
+do else enum export extends false finally for function if implements
+import interface in instanceof let new package private protected
+public return static super switch this throw true try typeof
+var void while with yield
+
+Função built-in: prompt()
+
+let idade = prompt('Qual sua idade?');
+console.log(idade);
+
+Função built-in alert()
+alert('Veja esta mensagem!');
+
+Função built-in: Math.x()
+
+let maiorNumero = Math.max(1,5,2,3);
+console.log(maiorNumero);
+Math.min
+Math.round
+Math.ceil
+
+Estruturas de controle
+if(idade > 18) {
+    console.log('Pode entrar');
+} else {
+    console.log('O seu nome não é João');
+}
+
+if (a + b == 3) {
+    console.log('O resultado é 3');
+} else if(a == 4) {
+    console.log('O valor de a é 4');
+} else {
+    console.log('Nenhuma das condições acima!);
+}
+
+Estruturas de repetição
+
+let x = 10
+while(x > 0) {
+    console.log(x);
+    x = x - 1;
+}
+
+let y = 0;
+do {
+    console.log(y);
+    y = y + 1;
+} while(y < 5);
+
+for(let numero = 2; numero < 100; numero * 2) {
+    console.log("O número é: " + numero);
+}
+
+Forçando saída de um loop: break
+
+for(let i = 5; i < 20; i = i + 1) {
+    if(i % 10 == 0) {
+        console.log('Saiu do loop');
+        break;
+    }
+    console.log('Prosseguindo o loop');
+}
+
+Pulando uma execução do loop: continue
+let x = 0;
+while(x < 11) {
+    x = x + 1;
+    if(x % 2 == 0) {
+        continue;
+    }
+    console.log(x);
+    x = x + 1;
+}
+
+Switch
+switch(nome) {
+    case "João":
+        console.log("O seu nome é João");
+        break;
+    case "Marcos":
+        console.log("O seu nome é Marcos");
+        break;
+    default:
+        console.log("O seu nome não é João nem Marcos");
+        break;
+}
+
+Comentários
+// Comentário de uma linha
+/*
+    Comentário
+    de várias
+    linhas
+*/
